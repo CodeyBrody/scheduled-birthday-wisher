@@ -11,7 +11,7 @@ NUMBER_OF_LETTERS = 3
 
 birthday_list = pandas.read_csv("birthdays.csv")
 
-today = dt.datetime.today()
+today = datetime.today()
 month = today.month
 day = today.day
 birthday_people = birthday_list[(birthday_list["day"] == day) & (birthday_list["month"] == month)]
